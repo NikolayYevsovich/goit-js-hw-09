@@ -16,3 +16,53 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: darkblue;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  padding: 10px;
+  margin: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 20 20 20 20;
+}
+
+.field > .value {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+span[data-days] {
+  color: red;
+}
+span[data-hours] {
+  color: green;
+}
+span[data-minutes] {
+  color: blue;
+}
+span[data-seconds] {
+  color: rebeccapurple;
+}
+
+
+span[data-days] + .label {
+  color: red;
+}
+span[data-hours]+.label {
+  color: green;
+}
+span[data-minutes]+.label {
+  color: blue;
+}
+span[data-seconds]+.label {
+  color: rebeccapurple;
+}
